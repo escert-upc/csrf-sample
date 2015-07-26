@@ -7,8 +7,10 @@
 <p>Ara mateix l'alarma està DESACTIVADA!</p>
 </c:if>
 <ul>
-<li><a href="admin/alarma?accio=desactivar">Desactivar l'alarma</a>
-<li><a href="admin/alarma?accio=activar">Activar l'alarma</a>
+<c:url value="/admin/alarma?accio=desactivar" var="desactivar"/>
+<c:url value="/admin/alarma?accio=activar" var="activar"/>
+<li><a href="${desactivar}">Desactivar l'alarma</a>
+<li><a href="${activar}">Activar l'alarma</a>
 </ul>
 </body>
 </html>
